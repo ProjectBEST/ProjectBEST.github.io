@@ -638,7 +638,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
     padding: 6em 0 4em 0;
 }
 .wrapper.style1 {
-    background: #ffffff;
+    background: #fff;
     color: #555f66;
 }
 .wrapper.style2 {
