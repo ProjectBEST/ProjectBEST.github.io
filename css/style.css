@@ -638,11 +638,11 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
     padding: 6em 0 4em 0;
 }
 .wrapper.style1 {
-    background: #fff;
+    background: #ffffff;
     color: #555f66;
 }
 .wrapper.style2 {
-    background: #192024;
+    background: #629DD1;
     color: #c5c7c8;
 }
 .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
@@ -670,7 +670,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
     padding-top: 3em;
 }
 #header {
-    background: #192024;
+    background: #629DD1;
     color: #fff;
     cursor: default;
     height: 3em;
