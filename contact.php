@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Project BEST &ndash; About</title>
+    <title>Project BEST &ndash; Contact Us</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/style-xlarge.css" />
     </noscript>
     <link rel="shortcut icon" href="favicon.ico">
+    <script src="email/validation.js" type="text/javascript"></script>
 </head>
 
 <body id="top">
@@ -29,7 +30,7 @@
             <ul>
                 <li><a href="index.html">Home</a>
                 </li>
-                <li><a href="#">About</a>
+                <li><a href="about.html">About</a>
                 </li>
                 <li><a href="getinvolved.html">Get Involved</a>
                 </li>
@@ -37,7 +38,7 @@
                 </li>
                 <li><a href="#">Team</a>
                 </li>
-                <li><a href="contact.php">Contact Us</a>
+                <li><a href="#">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -46,46 +47,43 @@
     <!-- Main -->
     <section id="main" class="wrapper style1">
         <header class="major">
-            <h2>About</h2>
-            <p>&ldquo;What is a scientist after all&quest; It is a curious man looking through a keyhole&comma; the keyhole of nature&comma; trying to know what&apos;s going on&rdquo;
-                <br>Jacques Yves Cousteau</p>
+            <h2>Contact Us</h2>
+            <p>Have something to say&quest; Go ahead and fill this out and we&apos;ll get back to you as soon as possible&excl;</p>
         </header>
         <div class="container">
-            <hr class="major" />
-            <section>
-                <h2>Our Purpose</h2>
-                <a href="#" class="image fit">
-                    <img src="images/team.jpg" alt="" />
-                </a>
-                <p>Project BEST (Building Excitement for Science and Technology) is an organization dedicated to providing students with education, enrichment, and a joy for learning and understanding the exciting science and technological advances happening around us. This is achieved through interactive programs, workshops, chapters and a unique entrepreneurship aspect that fosters an interest in innovation. Based on the three pillars of Knowledge, Discovery, and Experience, Project BEST creates and drives curiosity in students everywhere.</p>
-                <p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante.</p>
-            </section>
-            <hr class="major" />
+            <hr class="major" />  
             <div class="row">
-                <div class="6u">
+                <div class="12u">
                     <section class="special">
-                        <a href="#" class="image fit">
-                            <img src="images/teach2.jpg" alt="" />
-                        </a>
-                        <h3>Our Method</h3>
-                        <p>When Project BEST was first started in December of 2011, it was built upon three pillars that truly represent what we are trying to achieve. We boiled it down to just three words.  Three words that reflect our desire and goal to revolutionize the world and introduce students to a whole new dimension of critical thinking. These three simple, yet powerful words will define us for years to come and showcase what we hope to change. These three words are:<br>Knowledge, Discovery and Experience.</p>
-                        <ul class="actions">
-                            <li><a href="#" class="button alt">Learn More</a>
-                            </li>
-                        </ul>
+                        <h3 style="color:#629DD1;">
+                                <?php echo $_GET[msg];?>
+                        </h3>
                     </section>
                 </div>
-                <div class="6u">
+            </div>
+            <div class="row"> 
+                <div class="8u">
                     <section class="special">
-                        <a href="#" class="image fit">
-                            <img src="images/team2.jpg" alt="" />
-                        </a>
-                        <h3>The Team</h3>
-                        <p>Eget mi ac magna cep lobortis faucibus accumsan enim lacinia adipiscing metus urna adipiscing cep commodo id. Ac quis arcu amet. Arcu nascetur lorem adipiscing non faucibus odio nullam arcu lobortis. Aliquet ante feugiat. Turpis aliquet ac posuere volutpat lorem arcu aliquam lorem.</p>
-                        <ul class="actions">
-                            <li><a href="#" class="button alt">Learn More</a>
-                            </li>
-                        </ul>
+                        <form name="enq" method="post" action="email/" onsubmit="return validation();">
+                            <fieldset>
+
+                                <input type="text" name="name" id="name" value="" class="input-block-level" placeholder="Name" /><br>
+                                <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email Address" /><br>
+                                <input type="text" name="phone" id="phone" value="" class="input-block-level" placeholder="Phone Number" /><br>
+                                <textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Message"></textarea><br>
+
+                                <div class="actions">
+                                    <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="button special" title="Click here to submit your message!" />
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </section>
+                </div>
+                <div class="4u">
+                    <section>
+                        <h3>Our Information:</h3>
+                        <p><b>Email:</b>&nbsp;projectbest.usa@gmail.com<br><b>Telephone:</b>&nbsp;571-234-3172</p>
                     </section>
                 </div>
             </div>
